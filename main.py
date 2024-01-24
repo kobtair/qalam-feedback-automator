@@ -44,6 +44,7 @@ def main():
         for slider in sliders:
             highlight(driver, slider)
             slider.send_keys(Keys.RIGHT)
+            time.sleep(0.3)
         comment = driver.find_element(By.TAG_NAME, "textarea")
         comment.send_keys("The Instructor was very nice")
         submit = driver.find_element(By.CLASS_NAME, "md-btn-primary")
