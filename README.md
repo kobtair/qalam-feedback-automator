@@ -21,8 +21,7 @@ cd qalam-feedback-automation
 2. Install the required dependencies:
 
 ```bash
-pip install selenium
-pip install tkinter
+pip install selenium tkinter
 ```
 
 ## Usage
