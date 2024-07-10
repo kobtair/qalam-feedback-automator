@@ -7,7 +7,7 @@ Automate the submission of the Qalam Feedback form using this Python script powe
 Before running the script, ensure that you have the following:
 
 - Python installed on your machine
-- Selenium library installed (you can install it using `pip install selenium`)
+- Selenium and Tkinter libraries installed (you can install it using `pip install selenium tkinter`)
 
 ## Installation
 
