@@ -22,6 +22,7 @@ cd qalam-feedback-automation
 
 ```bash
 pip install selenium
+pip install tkinter
 ```
 
 ## Usage
