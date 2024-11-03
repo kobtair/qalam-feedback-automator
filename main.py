@@ -13,7 +13,7 @@ def highlight(driver, elt, style="background: yellow; border: 3px solid red;"):
 
 def main(username, password):
     links = []
-    driver = webdriver.Edge()
+    driver = webdriver.Firefox()
     driver.get("https://qalam.nust.edu.pk/")
     form = driver.find_element(By.TAG_NAME, "form")
     form.find_element(By.NAME, "login").send_keys(username)
@@ -46,16 +46,16 @@ def main(username, password):
         for slider in sliders:
             highlight(driver, slider)
             slider.send_keys(Keys.RIGHT)
-            time.sleep(random.choice([0.5, 0.6, 0.3]))
+            time.sleep(0.6)
 
         comment = driver.find_element(By.TAG_NAME, "textarea")
         comment.send_keys("The Instructor was very nice")
         submit = driver.find_element(By.CLASS_NAME, "md-btn-primary")
         highlight(driver, submit)
         submit.click()
-        time.sleep(5)
+        time.sleep(0.6)
 
-    time.sleep(5)
+    time.sleep(0.6)
     driver.quit()
 
 def get_credentials():
